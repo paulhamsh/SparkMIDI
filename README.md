@@ -46,6 +46,7 @@ void change_reverb_param(int param, float val);
 
 void change_hardware_preset(int pres_num);
 void change_custom_preset(SparkPreset *preset, int pres_num);
+void update_ui();
 ```
 
 And the core program to do this looks like:
@@ -66,5 +67,13 @@ void loop() {
   // change_reverb_toggle();
   // change_amp_param(AMP_GAIN, 0.99);
   
+  // change_amp_model("94MatchDCV2");
+  // change_drive_model("Booster");  
+  // change_mod_model("GuitarEQ6");
+  // change_delay_model("DelayMono");
+  // update_ui();
+  
 }
 ```
+
+```update_ui()``` will force the app ui to refresh to reflect the actual amp.   
