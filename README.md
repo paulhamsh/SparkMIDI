@@ -81,5 +81,5 @@ void loop() {
 ```update_ui()``` will force the app ui to refresh to reflect the actual amp.   
 
 The ```#define CLASSIC``` specifies which bluetooth library to use.   
-CLASSIC uses the BLE bluedroid library which will support a classic bluetooth connection (Android app) and BLE (IOS app) - but it doesn't handle loss of connection to Spark whilst using an IOS app well (it is fine with classic ie Android).   
-If CLASSIC is not defined it will use the NimBLE library which will only work with BLE, but handles a Spark connection loss properly for BLE.    
+```CLASSIC``` uses the BLE bluedroid library which will support a classic bluetooth connection (Android app) and BLE (IOS app) - but it doesn't handle loss of connection to Spark whilst using an IOS app well (it is fine with classic ie Android).   
+If ```CLASSIC``` is not defined it will use the NimBLE library which will only work with BLE, but handles a Spark connection loss properly for BLE.    
