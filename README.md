@@ -11,9 +11,13 @@ The last bit requires a workaround because the app doesn't want to receive chang
 
 This also usese the latest SparkIO class and SparkComms and a new wrapper.   
 
-The API to control the Spark is new for this version - as in this table (Spark.h).   
+v5 has a nice UI on M5 Stack Core 2.    
 
 ![Example](https://github.com/paulhamsh/SparkMIDI/blob/main/image1.jpg)
+
+
+
+The API to control the Spark is new for this version - as in this table (Spark.h).   
 
 
 ```
