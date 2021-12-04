@@ -13,6 +13,9 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 
 The API to control the Spark is new for this version - as in this table (Spark.h).   
 
+![Example](https://github.com/paulhamsh/SparkMIDI/blob/main/image1.jpeg)
+
+
 ```
 void change_comp_model(char *new_eff);
 void change_drive_model(char *new_eff);
