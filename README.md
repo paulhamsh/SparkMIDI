@@ -15,7 +15,9 @@ v5 has a nice UI on M5 Stack Core 2.
 
 ![Example](https://github.com/paulhamsh/SparkMIDI/blob/main/image1.jpg)
 
-
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/image1.jpg" width="350" title="M5 Core 2">
+</p>
 
 The API to control the Spark is new for this version - as in this table (Spark.h).   
 
