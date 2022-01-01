@@ -27,11 +27,15 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 ## Circuit  
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit1.jpeg" width="200" title="circuit1">
-
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit1.jpeg" width="300" title="circuit1">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit2.jpeg" width="300" title="circuit2">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit3.jpeg" width="300" title="circuit3">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit4.jpeg" width="300" title="circuit4">
 </p>
 
-
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/vero.png" width="300" title="vero">
+</p>
 
 v5 has a nice UI on M5 Stack Core 2.    
 
