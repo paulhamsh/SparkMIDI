@@ -34,7 +34,7 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 </p>
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/vero.png" width="300" title="vero">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="300" title="vero">
 </p>
 
 v5 has a nice UI on M5 Stack Core 2.    
