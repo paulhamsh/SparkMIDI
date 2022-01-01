@@ -34,13 +34,13 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 </p>
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="300" title="vero">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="700" title="vero">
 </p>
 
 v5 has a nice UI on M5 Stack Core 2.    
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="700" title="M5 Core 2">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="350" title="M5 Core 2">
 </p>
 
 The API to control the Spark is new for this version - as in this table (Spark.h).   
