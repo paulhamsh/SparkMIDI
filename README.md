@@ -13,6 +13,8 @@ The last bit requires a workaround because the app doesn't want to receive chang
 
 This also usese the latest SparkIO class and SparkComms and a new wrapper.   
 
+## Case for circuit   
+
 <p align="center">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box1.jpeg" width="200" title="box1">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box2.jpeg" width="200" title="box2">
@@ -20,12 +22,14 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box4.jpeg" width="200" title="box4">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box5.jpeg" width="200" title="box5">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box6.jpeg" width="200" title="box6">
-
 </p>
 
+## Circuit  
 
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit1.jpeg" width="200" title="circuit1">
 
-
+</p>
 
 
 
