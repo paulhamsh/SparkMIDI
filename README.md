@@ -14,12 +14,12 @@ The last bit requires a workaround because the app doesn't want to receive chang
 This also usese the latest SparkIO class and SparkComms and a new wrapper.   
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box1.jpg" width="200" title="box1">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box2.jpg" width="200" title="box2">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box3.jpg" width="200" title="box3">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box4.jpg" width="200" title="box4">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box5.jpg" width="200" title="box5">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box6.jpg" width="200" title="box6">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box1.jpeg" width="200" title="box1">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box2.jpeg" width="200" title="box2">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box3.jpeg" width="200" title="box3">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box4.jpeg" width="200" title="box4">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box5.jpeg" width="200" title="box5">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box6.jpeg" width="200" title="box6">
 
 </p>
 
