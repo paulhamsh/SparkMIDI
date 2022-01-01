@@ -3,13 +3,31 @@ Midi control capability for the Spark 40 Amp
 
 Needs an ESP32 device, preferrably with USB host capability.   
 
-The M5 Stack Core with USB base is perfect, or a Heltec WIFI with an additional USB host board wired to it.   (See https://github.com/paulhamsh/HeltecUSBHost on how to create that.)   
+My new version 6 is based on a generic ESP32 with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI.
+
+Otherwise, you can use the M5 Stack Core with USB base, or a Heltec WIFI with an additional USB host board wired to it.   (See https://github.com/paulhamsh/HeltecUSBHost on how to create that.)   
 
 This allows either the Android or IOS apps to connect to the ESP32, and that can have either a bluetooth midi device and/or a wired USB midi device connected, and everything can control the Spark 40 amp - and the app will update to show the changes.   
 
 The last bit requires a workaround because the app doesn't want to receive changes from the ESP32 - it doesn't expect much from the Spark 40 amp. So this uses the fourth preset to hold the current values and updates the app by fooling it into thinking the preset was saved on the amp (as if the preset button was held for a period).   
 
 This also usese the latest SparkIO class and SparkComms and a new wrapper.   
+
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box1">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box2">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box3">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box4">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box5">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="box6">
+
+</p>
+
+
+
+
+
+
 
 v5 has a nice UI on M5 Stack Core 2.    
 
