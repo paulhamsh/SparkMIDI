@@ -15,7 +15,7 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 
 ## Arduino IDE install libraries
 
-If using a separate OLED display the code is now using the ```ThingPulse SSD1306``` driver (4.2.1).   
+If using a separate OLED display the code is now using the ```ESP8266 and ESP32 driver for SSD1306 displays``` driver by ThingPulse (4.2.1).   
 If using M5Stack or Heltec it has its own display and does not require a library for the display.
 
 The code can use two varieties of BLE library - the standard Arduino ESP32 BLE or NimBLE. NimBLE is smaller and handles disconnects better, but it doesn't allow for a Classic Bluetooth stack - which is needed if your app is running on Android.
