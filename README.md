@@ -15,14 +15,18 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 
 ## Arduino IDE install libraries
 
-The only library required is NimBLE.  
-The code can use either the in-built Arduino ESP32 BLE library or NimBLE.   
-If using the in-built library, then this is known to work with verion 1.0.4.  
-If using a later version, uncomment the line ```setMTU()``` in SparkComms.ino - this makes it work and is tested with version 2.0.2.   
-For 'esp32' board v2.0.2 is fine, for M5Stack board v2.0.1 is fine. Heltec-esp is using v0.0.5 which seems to be the latest one it has.   
-This is mostly relevant with a 'vanilla' ESP32 install. If using a Heltec or M5Core product, their in-built libraries don't seem to have the same issues with BLE.  (Or perhaps they just use older versions.)  
+If using a separate OLED display the code is now using the ```ThingPulse SSD1306``` driver (4.2.1).   
+If using M5Stack or Heltec it has its own display and does not require a library for the display.
 
-Also see later for my comments on ```#define CLASSIC``` which specifies which library to use.   
+The code can use two varieties of BLE library - the standard Arduino ESP32 BLE or NimBLE. NimBLE is smaller and handles disconnects better, but it doesn't allow for a Classic Bluetooth stack - which is needed if your app is running on Android.
+The code can choose which library using the ```#define CLASSIC``` directive - if that is defined then the code with use the standard BLE, otherwise it will use NimBLE.
+
+If you select to use NimBLE you must install this library.
+
+For the classic BLE, the code is dependent on the version of library being used.   
+
+For M5Stack and vanilla ESP32 ('esp32' in the boards manager) the latest versions work (2.0.1 and 2.0.2 respectively).   
+For Heltec ESP ('Heltec ESP') the latest package is v0.0.5 which doesn't have the latest BLE library - it has an older version. To use this version please comment out  ```setMTU()``` in SparkComms.ino
 
 Any questions please ask as an 'issue'.   
 
@@ -125,6 +129,8 @@ void loop() {
 ```
 
 ```update_ui()``` will force the app ui to refresh to reflect the actual amp.   
+
+## Bluetooth library   
 
 The ```#define CLASSIC``` specifies which bluetooth library to use.   
 ```CLASSIC``` uses the BLE bluedroid library which will support a classic bluetooth connection (Android app) and BLE (IOS app) - but it doesn't handle loss of connection to Spark whilst using an IOS app well (it is fine with classic ie Android).   
