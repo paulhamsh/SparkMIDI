@@ -15,18 +15,18 @@ This also usese the latest SparkIO class and SparkComms and a new wrapper.
 
 ## Arduino IDE install libraries
 
-If using a separate OLED display the code is now using the ```ESP8266 and ESP32 driver for SSD1306 displays``` driver by ThingPulse (4.2.1).   
-If using M5Stack or Heltec it has its own display and does not require a library for the display.
+If using a separate OLED display the code has been tested using the ```ESP8266 and ESP32 driver for SSD1306 displays``` driver by ThingPulse (4.2.1).   
+If using M5Stack or Heltec it has its own display and does not require an additional library.   
 
-The code can use two varieties of BLE library - the standard Arduino ESP32 BLE or NimBLE. NimBLE is smaller and handles disconnects better, but it doesn't allow for a Classic Bluetooth stack - which is needed if your app is running on Android.
-The code can choose which library using the ```#define CLASSIC``` directive - if that is defined then the code with use the standard BLE, otherwise it will use NimBLE.
+The code can use two varieties of BLE library - the standard Arduino ESP32 BLE or NimBLE.    
+NimBLE is smaller and handles disconnects better, but it doesn't allow for a Classic Bluetooth stack - which is needed if your app is running on Android.   
+The code can choose which library using the ```#define CLASSIC``` directive - if that is defined then the code with use the standard BLE, otherwise it will use NimBLE.   
 
-If you select to use NimBLE you must install this library ```NimBLE-Arduino```. The code has been tested with 1.3.1.   
+If you wisht to use NimBLE you must install the ```NimBLE-Arduino``` library. The code has been tested with 1.3.1.   
 
 For the classic BLE, the code is dependent on the version of library being used.   
-
 For M5Stack and vanilla ESP32 ('esp32' in the boards manager) the latest versions work (2.0.1 and 2.0.2 respectively).   
-For Heltec ESP ('Heltec ESP') the latest package is v0.0.5 which doesn't have the latest BLE library - it has an older version. To use this version please comment out  ```setMTU()``` in SparkComms.ino
+For Heltec ESP ('Heltec ESP') the latest package is v0.0.5 which doesn't have the latest BLE library - it has an older version. To use this version please comment out  ```setMTU()``` in SparkComms.ino   
 
 Any questions please ask as an 'issue'.   
 
