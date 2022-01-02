@@ -49,7 +49,7 @@ Any questions please ask as an 'issue'.
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="700" title="vero">
 </p>
 
-v5 has a nice UI on M5 Stack Core 2.    
+v5 has a nice UI on M5 Stack Core 2. You can see the v6 OLED UI in the box pictures earlier - not quite so pretty.       
 
 <p align="center">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="350" title="M5 Core 2">
