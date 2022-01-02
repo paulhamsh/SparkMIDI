@@ -3,7 +3,7 @@ Midi control capability for the Spark 40 Amp
 
 Needs an ESP32 device, preferrably with USB host capability.   
 
-v6 (SparkMIDI6) uses a DevKit ESP32 with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI.
+v6 (SparkMIDI6) uses a 'vanilla' ESP32 (actually from A-Z Delivery, but it seems pretty standard) with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI.
 
 Otherwise, you can use the M5 Stack Core with USB base, or a Heltec WIFI with an additional USB host board wired to it.   (See https://github.com/paulhamsh/HeltecUSBHost on how to create that.)   
 
