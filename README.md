@@ -54,6 +54,8 @@ Any questions please ask as an 'issue'.
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="700" title="vero">
 </p>
 
+NOTE the 5v connection shown under the USB Host board is wired to the Host board and not the veroboard - I didn't know how to show that.   
+
 v5 has a nice UI on M5 Stack Core 2. You can see the v6 OLED UI in the box pictures earlier - not quite so pretty.       
 
 <p align="center">
