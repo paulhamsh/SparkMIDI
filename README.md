@@ -21,7 +21,7 @@ If using M5Stack or Heltec it has its own display and does not require a library
 The code can use two varieties of BLE library - the standard Arduino ESP32 BLE or NimBLE. NimBLE is smaller and handles disconnects better, but it doesn't allow for a Classic Bluetooth stack - which is needed if your app is running on Android.
 The code can choose which library using the ```#define CLASSIC``` directive - if that is defined then the code with use the standard BLE, otherwise it will use NimBLE.
 
-If you select to use NimBLE you must install this library.
+If you select to use NimBLE you must install this library ```NimBLE-Arduino```. The code has been tested with 1.3.1.   
 
 For the classic BLE, the code is dependent on the version of library being used.   
 
