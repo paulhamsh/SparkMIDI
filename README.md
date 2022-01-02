@@ -19,6 +19,7 @@ The only library required is NimBLE.
 The code can use either the in-built Arduino ESP32 BLE library or NimBLE.   
 If using the in-built library, then this is known to work with verion 1.0.4.  
 If using a later version, uncomment the line ```setMTU()``` in SparkComms.ino - this makes it work and is tested with version 2.0.2.   
+For 'esp32' board v2.0.2 is fine, for M5Stack board v2.0.1 is fine. Heltec-esp is using v0.0.5 which seems to be the latest one it has.   
 This is mostly relevant with a 'vanilla' ESP32 install. If using a Heltec or M5Core product, their in-built libraries don't seem to have the same issues with BLE.  (Or perhaps they just use older versions.)  
 
 Also see later for my comments on ```#define CLASSIC``` which specifies which library to use.   
