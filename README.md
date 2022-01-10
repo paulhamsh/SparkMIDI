@@ -1,6 +1,13 @@
 # SparkMIDI
 Midi control capability for the Spark 40 Amp   
 
+Features (v7):   
+. App can connect (so enabling Hendrix features)
+. USB host for MIDI devices
+. Serial/DIN MIDI devices
+. Bluetooth MIDI devices (keyboards / controllers)
+. BLE MIDI control (example, from an IOS MIDI generating app - tested with MidiWrench)
+
 Needs an ESP32 device, preferrably with USB host capability.   
 
 v6 (SparkMIDI6) uses a 'vanilla' ESP32 (actually from A-Z Delivery, but it seems pretty standard) with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI.
