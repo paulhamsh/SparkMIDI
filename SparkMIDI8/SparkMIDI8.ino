@@ -15,7 +15,8 @@
 // Spark MIDI
 //
 // Open source MIDI control for the Spark 40 amp from Positive Grid
-// See https://github.com/paulhamsh/SparkMIDI for more details
+// See    https://github.com/paulhamsh/SparkMIDI for more details
+// Also   https://github.com/paulhamsh/Spark for documentation on the API and the message format to the Spark amp   
 //
 
 // if CLASSIC is defined, will compile with BLE stack which allows serial bluetooth
