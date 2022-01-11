@@ -1,7 +1,7 @@
 # SparkMIDI
 Midi control capability for the Spark 40 Amp   
 
-Features (v7):   
+Features (v8):   
 - App can connect (so enabling Hendrix features)   
 - USB host for MIDI devices   
 - Serial/DIN MIDI devices   
