@@ -76,7 +76,7 @@ Any questions please ask as an 'issue'.
 </p>
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.png" width="700" title="vero">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.jpg" width="700" title="vero">
 </p>
 
 NOTE the 5v connection shown under the USB Host board is wired to the Host board and not the veroboard - I didn't know how to show that.   
