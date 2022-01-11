@@ -10,6 +10,17 @@ Features (v8):
 
 - Works with iOS and Android !!!
 
+Connection sequence:   
+- this will search for a bluetooth midi controller and Spark amp first   
+- it will block until it connects to the Spark amp 
+- it will not block if no bluetooth midi controller is found - this is optional     
+- then it will be available for the Spark app and BLE MIDI devices to connect to 'Spark MIDI'   
+
+Hints for use:   
+- a bluetooth midi controller must be discoverable BEFORE the Spark amp   
+- the Spark app must be connected AFTER the amp but BEFORE a BLE MIDI device   
+- USB and Serial DIN can be plugged in and out at any point   
+
 
 Needs an ESP32 device, preferrably with USB host capability.   
 
