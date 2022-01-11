@@ -10,6 +10,10 @@ Features (v8):
 
 - Works with iOS and Android !!!
 
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/BLE Connections.jpg" width="700" title="vero">
+</p>
+
 Connection sequence:   
 - this will search for a bluetooth midi controller and Spark amp first   
 - it will block until it connects to the Spark amp 
