@@ -55,7 +55,11 @@ bool update_midi(byte *mid) {
   if (ser->available()) {
     mid[0] = ser->read();
     mid[1] = ser->read();
-    mid[2] = ser->read();
+    if (mid[0] == 0xC0 || mid[0] == 0xD0)
+      mid[2] = 0;
+    else 
+      mid[2] = ser->read();
+
     if (mid[0] != 0xFE) {
       got_midi = true;
       set_conn_received(SER_MIDI);
