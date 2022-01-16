@@ -11,6 +11,10 @@ USB Usb;
 USBH_MIDI Midi(&Usb);
 bool usb_connected;
 
+uint16_t rcvd;
+uint8_t chan;
+uint8_t midi_buf[50*4];
+
 int ble_app_status;
 int ble_app_cmd_count;
 int ble_app_data_count;
