@@ -121,8 +121,13 @@ BLEAdvertisedDevice *pedal_device;
 
 RingBuffer ble_in;
 RingBuffer ble_app_in;
+
+#ifdef BT_CONTROLLER
 RingBuffer midi_in;
+#endif
+
 #ifdef BLE_MIDI_ON
 RingBuffer ble_midi_in;
 #endif
+
 #endif
