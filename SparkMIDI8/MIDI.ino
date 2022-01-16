@@ -4,6 +4,7 @@
 void setup_midi() {
   byte b;
 
+#ifdef USB_HOST_ON
   if (Usb.Init() == -1) {
     DEBUG("USB host init failed");
     usb_connected = false;
@@ -12,6 +13,7 @@ void setup_midi() {
     DEBUG("USB host running");
     usb_connected = true;   
   }
+#endif
   
   ser = new HardwareSerial(1); 
   ser->begin(31250, SERIAL_8N1, 17, -1);
@@ -19,10 +21,12 @@ void setup_midi() {
   while (ser->available())
     b = ser->read();
 
+#ifdef USB_TRINKET
   ser2 = new HardwareSerial(2); 
   ser2->begin(115200, SERIAL_8N1, 19, 18);
 
   while (ser2->available())    b = ser2->read();
+#endif
 
   ble_app_data_count = 0;
   ble_app_cmd_count = 0;
@@ -86,7 +90,8 @@ bool update_midi(byte *mid) {
   }
 
 
-  // Serial 2 DIN MIDI
+#ifdef USB_TRINKET
+  // Serial 2 - Trinket M0 USB
   if (ser2->available()) {
     mid[0] = ser2->read();
     mid[1] = ser2->read();
@@ -101,7 +106,9 @@ bool update_midi(byte *mid) {
       set_conn_received(SER_MIDI);
     }
   }
-   
+#endif
+
+#ifdef BT_CONTROLLER
   // BLE MIDI controller
   if (!midi_in.is_empty()) {     // Bluetooth Midi
     midi_in.get(&b);
@@ -128,8 +135,9 @@ bool update_midi(byte *mid) {
       }
     }
   }
+#endif
 
-
+#ifdef USB_HOST_ON
   // USB MIDI  
   if (usb_connected) {
     Usb.Task();
@@ -145,6 +153,7 @@ bool update_midi(byte *mid) {
       }
     }
   }
+#endif
 
   if (got_midi) {
     Serial.print("MIDI ");
