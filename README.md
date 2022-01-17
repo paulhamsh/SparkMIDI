@@ -66,6 +66,13 @@ Any questions please ask as an 'issue'.
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/box6.jpeg" width="200" title="box6">
 </p>
 
+## Circuit diagrams
+
+<p align="center">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Host.jpeg" width="300" title="circuit1">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Trinket M0.jpeg" width="300" title="circuit2">
+</p>
+
 ## Circuit  
 
 <p align="center">
@@ -74,6 +81,7 @@ Any questions please ask as an 'issue'.
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit3.jpeg" width="300" title="circuit3">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/circuit4.jpeg" width="300" title="circuit4">
 </p>
+
 
 <p align="center">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/Vero.jpg" width="700" title="vero">
