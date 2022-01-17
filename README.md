@@ -11,7 +11,7 @@ Features (v8):
 - Works with iOS and Android !!!
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/BLE connections 2.jpg" width="700" title="connections">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/BLE connections 3.jpg" width="700" title="connections">
 </p>
 
 Connection sequence:   
