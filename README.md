@@ -70,7 +70,7 @@ Any questions please ask as an 'issue'.
 
 (Note: the Trinket M0 circuit is not the one built here - but the Trinket is cool and I'll add the details soon - with the right 
 code it will convery USB Midi to serial - saving all the SPI lines and replacing them with one or two serial lines.   
-The code for the Trinket is here:  https://github.com/gdsports/midiuartusbh)   
+The code for the Trinket is here:  https://github.com/gdsports/midiuartusbh and here: https://github.com/gdsports/usbhostcopro)   
 
 <p align="center">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Host.jpg" width="700" title="circuit1">
