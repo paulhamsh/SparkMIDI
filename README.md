@@ -68,9 +68,12 @@ Any questions please ask as an 'issue'.
 
 ## Circuit diagrams
 
+(Note: the Trinket M0 circuit is not the one built here - but the Trinket is cool and I'll add the details soon - with the right 
+code it will convery USB Midi to serial - saving all the SPI lines and replacing them with one or two serial lines)   
+
 <p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Host.jpg" width="300" title="circuit1">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Trinket M0.jpg" width="300" title="circuit2">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Host.jpg" width="700" title="circuit1">
+  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/DevKit Circuit Trinket M0.jpg" width="700" title="circuit2">
 </p>
 
 ## Circuit  
