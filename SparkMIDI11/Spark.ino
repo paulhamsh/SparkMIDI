@@ -92,8 +92,10 @@ bool  update_spark_state() {
         if (preset.curr_preset == 0x01) {
           pres = 5;
           // if we receive preset data for 0x0100 then we are fully synced
-          spark_state = SPARK_SYNCED;
-          DEBUG("FULLY SYNCED NOW");
+          if (spark_state == SPARK_SYNCING) {
+            spark_state = SPARK_SYNCED;
+            DEBUG("FULLY SYNCED NOW");
+          }
         }
         presets[pres] = preset;
         break;
