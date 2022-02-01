@@ -80,8 +80,10 @@ bool  update_spark_state() {
     switch (cmdsub) {
       // if serial number response then we know the connection is good
       case 0x0323:
-        spark_state = SPARK_COMMUNICATING;
-        DEBUG("RECEIVED SERIAL NUMBER - GOT CONNECTION");
+        if (spark_state == SPARK_CONNECTED) {
+          spark_state = SPARK_COMMUNICATING;
+          DEBUG("RECEIVED SERIAL NUMBER - GOT CONNECTION");
+        }
         break;
       // full preset details
       case 0x0301:  
