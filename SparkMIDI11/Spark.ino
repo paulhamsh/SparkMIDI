@@ -62,6 +62,7 @@ bool  update_spark_state() {
     spark_msg_out.get_preset_details(0x0002);
     spark_msg_out.get_preset_details(0x0003);
     spark_msg_out.get_preset_details(0x0100);
+    spark_msg_out.get_hardware_preset_number();
     spark_state = SPARK_SYNCING;
     DEBUG("REQUESTED PRESETS");
   }
