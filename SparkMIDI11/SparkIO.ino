@@ -721,6 +721,7 @@ bool MessageIn::get_message(unsigned int *cmdsub, SparkMessage *msg, SparkPreset
     case 0x0363:
       read_float(&msg->val);  
       break;
+    case 0x0470:
     case 0x0428:
       read_byte(&junk);
       break;
