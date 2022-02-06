@@ -36,10 +36,18 @@ bool  update_spark_state() {
   int pres, ind;
 
   // sort out connection and sync progress
-  if (conn_status[SPK] == false) {
+  if (conn_status[SPK] == false && spark_state != SPARK_DISCONNECTED) {
     spark_state = SPARK_DISCONNECTED;
+    spark_ping_timer = millis();
     DEBUG("SPARK DISCONNECTED, TRY TO CONNECT");
-    connect_spark();  // reconnects if any disconnects happen
+  }
+
+
+  if (spark_state == SPARK_DISCONNECTED) {
+    if (millis() - spark_ping_timer > 100) {
+      spark_ping_timer = millis();
+      connect_spark();  // reconnects if any disconnects happen    
+    }
   }
 
   if (conn_status[SPK] == true && spark_state == SPARK_DISCONNECTED) {
