@@ -1,12 +1,14 @@
 # SparkMIDI
 Midi control capability for the Spark 40 Amp   
 
-Features (v8):   
+Features (v12):   
 - App can connect (so enabling Hendrix features)   
 - USB host for MIDI devices   
 - Serial/DIN MIDI devices   
 - Bluetooth MIDI devices (keyboards / controllers)   
-- BLE MIDI control (example, from an IOS MIDI generating app - tested with MidiWrench)   
+- BLE MIDI control (example, from an IOS MIDI generating app - tested with MidiWrench)  
+- 
+- SparkIO will now read the Tuner output from the amp (note and in-tune indicator)    
 
 - Works with iOS and Android !!!
 
@@ -28,9 +30,16 @@ Hints for use:
 
 Needs an ESP32 device, preferrably with USB host capability.   
 
-v6 (SparkMIDI6) uses a 'vanilla' ESP32 (actually from A-Z Delivery, but it seems pretty standard) with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI.
+v12 (SparkMIDI12) uses an ESP32 with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI. USB Host MIDI can be via a generic USB Host board or a Trinket M0 programmed as USB Host.   
 
-Otherwise, you can use the M5 Stack Core with USB base, or a Heltec WIFI with an additional USB host board wired to it.   (See https://github.com/paulhamsh/HeltecUSBHost on how to create that.)   
+ESP boards available via conditional compilation (select the correct #define in SparkMIDI12.ino:
+- M5 Stack Core2   
+- M5 Stick C   
+- M5 Stack Core   
+- Heltec WIFI Kit     
+- ESP32 DevKit      
+
+You can use the M5 Stack Core with USB base, or a Heltec WIFI with an additional USB host board wired to it.   (See https://github.com/paulhamsh/HeltecUSBHost on how to create that.)   
 
 This allows either the Android or IOS apps to connect to the ESP32, and that can have either a bluetooth midi device and/or a wired USB midi device connected, and everything can control the Spark 40 amp - and the app will update to show the changes.   
 
@@ -51,7 +60,7 @@ If you wisht to use NimBLE you must install the ```NimBLE-Arduino``` library. Th
 
 For the classic BLE, the code is dependent on the version of library being used.   
 For M5Stack and vanilla ESP32 ('esp32' in the boards manager) the latest versions work (2.0.1 and 2.0.2 respectively).   
-For Heltec ESP ('Heltec ESP') the latest package is v0.0.5 which doesn't have the latest BLE library - it has an older version. To use this version please comment out  ```setMTU()``` in SparkComms.ino   
+For Heltec ESP ('Heltec ESP') the latest package is v0.0.5 which doesn't have the latest BLE library - it has an older version.    
 
 Any questions please ask as an 'issue'.   
 
