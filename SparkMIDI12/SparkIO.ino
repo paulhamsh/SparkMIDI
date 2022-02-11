@@ -680,6 +680,14 @@ bool MessageIn::get_message(unsigned int *cmdsub, SparkMessage *msg, SparkPreset
       read_byte(&msg->param1);
       read_float(&msg->val);
       break;
+    // tuner
+    case 0x0364:
+      read_byte(&msg->param1);
+      read_float(&msg->val);
+      break;
+    case 0x0365:
+      read_onoff(&msg->onoff);
+      break;
     // change of preset number selected on the amp via the buttons
     case 0x0338:
     case 0x0138:
