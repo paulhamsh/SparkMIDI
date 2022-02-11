@@ -60,7 +60,7 @@ void splash_screen() {
   M5.Lcd.print(SCR_SUBTITLE2); 
 #endif
 
-#if defined M5CORE2  
+#if defined M5CORE2  || defined M5CORE
   M5.Lcd.fillScreen(TFT_BLACK);
   M5.Lcd.setTextColor(TFT_WHITE);
   M5.Lcd.setTextSize(3);
@@ -139,7 +139,7 @@ void setup_screen() {
   M5.Lcd.print(SCR_SER_MIDI);   
 #endif
 
-#ifdef M5CORE2  
+#if defined M5CORE2  || defined M5CORE
   M5.Lcd.fillScreen(TFT_BLACK);
   M5.Lcd.fillRect(0, 0, L_BOX_SPLIT, 30, TFT_WHITE);   
   M5.Lcd.drawRect(L_BOX_SPLIT+2, 0, 320-L_BOX_SPLIT-2, 30, TFT_WHITE); 
@@ -250,7 +250,7 @@ void show_status() {
         }
     #endif
 
-    #ifdef M5CORE2
+    #if defined M5CORE2 || defined M5CORE
     for (int i = 0; i <= 1; i++) 
       for (int j = 0; j < NUM_CONNS; j++) 
         if (now - conn_last_changed[i][j] <= 900) {

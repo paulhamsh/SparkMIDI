@@ -66,13 +66,15 @@
 // Allowed combinations are:
 // M5STICK && USB_TRINKET
 // M5CORE2 && USB_TRINKET
+// M5CORE && USB_HOST  (the USB Host base from M5)
 // ESP_DEVKIT && (USB_TRINKET || USB_HOST)  can be either - the only one with a circuit for both so far
 // HELTEC_WIFI && USB_HOST
 //
 // OLED_ON is acceptable with all boards except HELTEC_WIFI
 
 //#define ESP_DEVKIT
-#define HELTEC_WIFI
+//#define HELTEC_WIFI
+#define M5CORE
 //#define M5CORE2
 //#define M5STICK
 
@@ -100,6 +102,8 @@
   #include <M5StickC.h>
 #elif defined M5CORE2
   #include <M5Core2.h>
+#elif defined M5CORE
+  #include <M5Stack.h>
 #endif
 
 #include "Spark.h"
@@ -109,8 +113,11 @@
 void setup() {
 #if defined HELTEC_WIFI
   Heltec.begin(true /*DisplayEnable Enable*/, false /*LoRa Enable*/, true /*Serial Enable*/);
-#elif defined M5STICK || defined M5CORE2
+#elif defined M5STICK || defined M5CORE2 || M5CORE
   M5.begin();
+#endif
+#if defined M5CORE
+  M5.Power.begin();
 #endif
 
   Serial.begin(115200);
@@ -126,7 +133,7 @@ void loop() {
   byte mi[3];
   int midi_chan, midi_cmd;
 
-#if defined M5STICK || defined M5CORE2
+#if defined M5STICK || defined M5CORE2 || defined M5CORE
   M5.update();
 #endif
   
