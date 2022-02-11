@@ -7,7 +7,7 @@ Features (v12):
 - Serial/DIN MIDI devices   
 - Bluetooth MIDI devices (keyboards / controllers)   
 - BLE MIDI control (example, from an IOS MIDI generating app - tested with MidiWrench)  
-- 
+
 - SparkIO will now read the Tuner output from the amp (note and in-tune indicator)    
 
 - Works with iOS and Android !!!
