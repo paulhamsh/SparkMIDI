@@ -145,7 +145,7 @@ void setup_screen() {
   M5.Lcd.drawRect(L_BOX_SPLIT+2, 0, 320-L_BOX_SPLIT-2, 30, TFT_WHITE); 
   M5.Lcd.setCursor(6,6);
   M5.Lcd.setTextColor(TFT_BLACK);
-  M5.Lcd.print(title);
+  M5.Lcd.print(SCR_TITLE);
   M5.Lcd.setTextColor(TFT_WHITE);
   M5.Lcd.setCursor(L_TO_COL, 6);
   M5.Lcd.print(ble_type);

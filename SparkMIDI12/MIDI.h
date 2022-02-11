@@ -24,12 +24,15 @@ HardwareSerial *ser2;
 #ifdef ESP_DEVKIT
   #define SER_RX 16
 #endif
+#ifdef M5CORE
+  #define SER_RX 16
+#endif
 #ifdef USB_TRINKET
   #ifdef ESP_DEVKIT
     #define SER_RX 17
     #define SER2_RX 19
     #define SER2_TX 18
-  #else  // can only be M5STICK or M5CORE2
+  #else  // can only be M5STICK or M5CORE2 
     #define SER_RX 26
     #define SER2_RX 0
     #define SER2_TX -1
