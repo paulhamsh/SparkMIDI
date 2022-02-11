@@ -32,7 +32,7 @@ Needs an ESP32 device, preferrably with USB host capability.
 
 v12 (SparkMIDI12) uses an ESP32 with a circuit to allow DIN / serial MIDI, bluetooth MIDI and USB Host MIDI. USB Host MIDI can be via a generic USB Host board or a Trinket M0 programmed as USB Host.   
 
-ESP boards available via conditional compilation (select the correct #define in SparkMIDI12.ino:
+ESP boards available via conditional compilation (select the correct #define in SparkMIDI12.ino):
 - M5 Stack Core2   
 - M5 Stick C   
 - M5 Stack Core   
@@ -101,12 +101,6 @@ The code for the Trinket is here:  https://github.com/gdsports/midiuartusbh and 
 </p>
 
 NOTE the 5v connection shown under the USB Host board is wired to the Host board and not the veroboard - I didn't know how to show that.   
-
-v5 has a nice UI on M5 Stack Core 2. You can see the v6 OLED UI in the box pictures earlier - not quite so pretty.       
-
-<p align="center">
-  <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/M5StackUI.jpg" width="200" title="M5 Core 2">
-</p>
 
 The API to control the Spark is new for this version - as in this table (Spark.h).   
 
