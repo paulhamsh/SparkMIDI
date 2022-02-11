@@ -113,7 +113,7 @@
 void setup() {
 #if defined HELTEC_WIFI
   Heltec.begin(true /*DisplayEnable Enable*/, false /*LoRa Enable*/, true /*Serial Enable*/);
-#elif defined M5STICK || defined M5CORE2 || M5CORE
+#elif defined M5STICK || defined M5CORE2 || defined M5CORE
   M5.begin();
 #endif
 #if defined M5CORE
