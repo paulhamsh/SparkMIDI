@@ -12,7 +12,7 @@ Features (v12):
 
 - Works with iOS and Android !!!
 
-# NEW - construction guide with pictures of all circuit construction steps!
+## NEW - construction guide with pictures of all circuit construction steps!
 
 <p align="center">
   <img src="https://github.com/paulhamsh/SparkMIDI/blob/main/pics/BLE connections 3.jpg" width="700" title="connections">
