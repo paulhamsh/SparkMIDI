@@ -1006,6 +1006,12 @@ void MessageOut::send_preset_number(uint8_t preset_h, uint8_t preset_l)
    end_message();
 }
 
+void MessageOut::tuner_on_off(bool onoff)
+{
+   start_message (0x0165);
+   write_onoff (onoff);
+   end_message();
+}
 void MessageOut::get_preset_details(unsigned int preset)
 {
    int i;

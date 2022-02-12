@@ -73,8 +73,8 @@
 // OLED_ON is acceptable with all boards except HELTEC_WIFI
 
 //#define ESP_DEVKIT
-//#define HELTEC_WIFI
-#define M5CORE
+#define HELTEC_WIFI
+//#define M5CORE
 //#define M5CORE2
 //#define M5STICK
 
@@ -158,7 +158,8 @@ void loop() {
    
     if (midi_cmd == 0x90) {       // LPD8 pads
       switch (mi[1]) {
-        case 0x18:           change_hardware_preset(0);                 break; // pad 1
+        case 0x18:           tuner_on_off(true);                        break; // testing tuner
+//        case 0x18:           change_hardware_preset(0);                 break; // pad 1
         case 0x1a:           change_hardware_preset(1);                 break; // pad 2
         case 0x1c:           change_hardware_preset(2);                 break; // pad 2
         case 0x1d:           change_hardware_preset(3);                 break; // pad 2        

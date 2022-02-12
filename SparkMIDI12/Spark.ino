@@ -381,3 +381,8 @@ void change_custom_preset(SparkPreset *preset, int pres_num) {
     spark_msg_out.change_hardware_preset(0, preset->preset_num);
   }
 }
+
+void tuner_on_off(bool on_off) {
+  spark_msg_out.tuner_on_off(on_off); 
+  spark_process();  
+}
