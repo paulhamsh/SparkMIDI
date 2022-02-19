@@ -48,7 +48,7 @@
 
 // Select whether to use external OLED
 // -----------------------------------
-//#define OLED_ON
+#define OLED_ON
 
 // Select the USB host device type
 // -------------------------------
@@ -123,8 +123,6 @@ void setup() {
   Serial.begin(115200);
   splash_screen();
   setup_midi();
-//  delay(3000);  
-//  setup_screen();
   
   while (!spark_state_tracker_start()) {  // set up data to track Spark and app state, if it fails to find the Spark it will return false
     DEBUG("No Spark found - perhaps sleep?");// think about a deep sleep here if needed

@@ -333,7 +333,7 @@ DEBUG("Scanning...");
     }
   }
 
-  if (!found_spark) return false;   // failed to find the Spark within the number of counts allowed (MAX_SCAN_COUNT)
+  if (!found_sp) return false;   // failed to find the Spark within the number of counts allowed (MAX_SCAN_COUNT)
   
     // Set up client
   connect_spark();
@@ -359,6 +359,7 @@ DEBUG("Scanning...");
 
   DEBUG("Available for app to connect...");  
   pAdvertising->start(); 
+  return true;
 }
 
 

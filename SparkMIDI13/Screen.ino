@@ -9,7 +9,7 @@ char ble_type[10] = "NimBLE";
 #define SCR_TITLE      "Spark MIDI"
 #define SCR_SUBTITLE1  "MIDI control for"
 #define SCR_SUBTITLE2  "PG Spark 40"
-#define SCR_VER "1.2"
+#define SCR_VER "1.3"
 
 #define SCR_COLS        "Con To Frm" 
 #define SCR_COLS_L      " Conn  To  From"
