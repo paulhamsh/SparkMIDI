@@ -128,11 +128,14 @@ void setup() {
 
   /// SPIFFS TESTING CODE - STARTS
   
+  //Start SPIFFS
   Serial.println("Testing SPIFFS");
   if (!SPIFFS.begin(FORMAT_SPIFFS_IF_FAILED)){
     Serial.println("SPIFFS Mount Failed");
     return;
   }
+
+  // Write and read a text file
   File file = SPIFFS.open("/1. Preset 1", FILE_WRITE); 
   if (!file) Serial.println("Could not open file");
   file.print("Hello Spark");
@@ -143,7 +146,8 @@ void setup() {
   }
   Serial.println();
   file.close();
-
+  
+  // write and read a SparkPreset
   SparkPreset pres1 {0x0,0x7f,"07079063-94A9-41B1-AB1D-02CBC5D00790","Silver Ship","0.7","1-Clean","icon.png",120.000000,{ 
     {"bias.noisegate", false, 3, {0.138313, 0.224643, 0.000000}}, 
     {"LA2AComp", true, 3, {0.000000, 0.852394, 0.373072}}, 
@@ -167,11 +171,13 @@ void setup() {
     Serial.println(pres2.effects[i].EffectName);
   }
 
+  // List files in root (there is only root in SPIFFS
   File root = SPIFFS.open("/");
   if (!root) Serial.println("Could not open file");  
   file = root.openNextFile();
   while (file) {
-    Serial.println(file.name()
+    Serial.println(file.name();
+    file = root.openNextFile();
   }
   Serial.println("Finished testing SPIFFS");  
 
