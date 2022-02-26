@@ -113,6 +113,17 @@
 #include "FS.h"
 #include "SPIFFS.h"
 #define FORMAT_SPIFFS_IF_FAILED true
+SparkPreset pres1 {0x0,0x7f,"07079063-94A9-41B1-AB1D-02CBC5D00790","Silver Ship","0.7","1-Clean","icon.png",120.000000,{ 
+    {"bias.noisegate", false, 3, {0.138313, 0.224643, 0.000000}}, 
+    {"LA2AComp", true, 3, {0.000000, 0.852394, 0.373072}}, 
+    {"Booster", false, 1, {0.722592}}, 
+    {"RolandJC120", true, 5, {0.632231, 0.281820, 0.158359, 0.671320, 0.805785}}, 
+    {"Cloner", true, 2, {0.199593, 0.000000}}, 
+    {"VintageDelay", false, 4, {0.378739, 0.425745, 0.419816, 1.000000}}, 
+    {"bias.reverb", true, 7, {0.285714, 0.408354, 0.289489, 0.388317, 0.582143, 0.650000, 0.200000}} },0xb4 };
+SparkPreset pres2;
+
+
 
 void setup() {
 #if defined HELTEC_WIFI
@@ -148,15 +159,7 @@ void setup() {
   file.close();
   
   // write and read a SparkPreset
-  SparkPreset pres1 {0x0,0x7f,"07079063-94A9-41B1-AB1D-02CBC5D00790","Silver Ship","0.7","1-Clean","icon.png",120.000000,{ 
-    {"bias.noisegate", false, 3, {0.138313, 0.224643, 0.000000}}, 
-    {"LA2AComp", true, 3, {0.000000, 0.852394, 0.373072}}, 
-    {"Booster", false, 1, {0.722592}}, 
-    {"RolandJC120", true, 5, {0.632231, 0.281820, 0.158359, 0.671320, 0.805785}}, 
-    {"Cloner", true, 2, {0.199593, 0.000000}}, 
-    {"VintageDelay", false, 4, {0.378739, 0.425745, 0.419816, 1.000000}}, 
-    {"bias.reverb", true, 7, {0.285714, 0.408354, 0.289489, 0.388317, 0.582143, 0.650000, 0.200000}} },0xb4 };
-  SparkPreset pres2;
+
 
   file = SPIFFS.open("/2. Preset 2", FILE_WRITE); 
   if (!file) Serial.println("Could not open file");
