@@ -180,7 +180,7 @@ void setup() {
   if (!root) Serial.println("Could not open file");  
   file = root.openNextFile();
   while (file) {
-    Serial.println(file.name();
+    Serial.println(file.name());
     file = root.openNextFile();
   }
   Serial.println("Finished testing SPIFFS");  
