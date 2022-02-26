@@ -110,6 +110,9 @@
 #include "Screen.h"
 #include "MIDI.h"
 
+
+// FOR SPIFFS TESTS
+
 #include "FS.h"
 #include "SPIFFS.h"
 #define FORMAT_SPIFFS_IF_FAILED true
@@ -159,14 +162,12 @@ void setup() {
   file.close();
   
   // write and read a SparkPreset
-
-
   file = SPIFFS.open("/2. Preset 2", FILE_WRITE); 
   if (!file) Serial.println("Could not open file");
-  file.write((static uint8_t*) &pres1, sizeof(pres1));
+  file.write((uint8_t*) &pres1, sizeof(pres1));
   file.close();
   file = SPIFFS.open("/2. Preset 2");
-  file.read((static uint8_t*) &pres2, sizeof(pres2));
+  file.read((uint8_t*) &pres2, sizeof(pres2));
   file.close();
   Serial.println(pres2.Name);  
   Serial.println(pres2.Description);  
