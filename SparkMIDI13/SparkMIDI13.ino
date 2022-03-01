@@ -36,7 +36,7 @@
 // it matters because Android Spark apps use serial bluetooth
 // but BLE doesn't handle Spark disconnection well, whereas NimBLE does
 
-//#define CLASSIC
+#define CLASSIC
 
 // Select the BLE devices you need
 // -------------------------------
@@ -48,7 +48,7 @@
 
 // Select whether to use external OLED
 // -----------------------------------
-#define OLED_ON
+//#define OLED_ON
 
 // Select the USB host device type
 // -------------------------------
@@ -72,9 +72,9 @@
 //
 // OLED_ON is acceptable with all boards except HELTEC_WIFI
 
-#define ESP_DEVKIT
+//#define ESP_DEVKIT
 //#define HELTEC_WIFI
-//#define M5CORE
+#define M5CORE
 //#define M5CORE2
 //#define M5STICK
 

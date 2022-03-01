@@ -86,6 +86,9 @@ void splash_screen() {
   Heltec.display->drawString(30, 52, SCR_SUBTITLE2); 
   Heltec.display->display();
 #endif
+
+  now = millis();
+  last_time = millis();
 }
 
 
@@ -189,8 +192,7 @@ void setup_screen() {
   Heltec.display->display();
 #endif
 
-  now = millis();
-  last_time = millis();
+
 }
 
 

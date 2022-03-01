@@ -22,10 +22,15 @@ Adafruit_SSD1306 display(128, 64, &Wire, -1);
      #endif
   #endif
 
-  #if defined M5CORE2 || defined M5STICK
+  #if defined M5CORE2 || defined M5STICK || defined M5CORE
     #define OLED_SDA 33
     #define OLED_SCL 32
   #endif
+
+  #if defined M5CORE
+    #define OLED_SDA 21
+    #define OLED_SCL 22
+  #endif 
 #endif
 
 // Smaller screen
