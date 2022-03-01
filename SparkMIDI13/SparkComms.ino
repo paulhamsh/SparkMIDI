@@ -31,10 +31,10 @@ class MyServerCallback : public BLEServerCallbacks
   {
      if (pserver->getConnectedCount() == 1) {
       set_conn_status_connected(APP);
-      DEBUG("callback: BLE app connected and is connected"); 
+      DEBUG("callback: BLE app connection event and is connected"); 
     }
     else {
-      DEBUG("callback: BLE app connected and is not really connected");   
+      DEBUG("callback: BLE app connection event and is not really connected");   
     }
     
   }
