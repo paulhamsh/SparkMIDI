@@ -157,6 +157,12 @@ void loop() {
         case 1:              change_hardware_preset(1);                 break; // MIDI Commander BIFX B
         case 2:              change_hardware_preset(2);                 break; // MIDI Commander BIFX C
         case 3:              change_hardware_preset(3);                 break; // MIDI Commander BIFX D
+
+        case 0x1c:           change_comp_onoff(onoff);                  break; // M Vave Bank 8
+        case 0x1d:           change_drive_onoff(onoff);                 break; // M Vave Bank 8    
+        case 0x1e:           change_mod_onoff(onoff);                   break; // M Vave Bank 8
+        case 0x1f:           change_delay_onoff(onoff);                 break; // M Vave Bank 8
+
       }
     }
 

@@ -184,7 +184,7 @@ void connect_pedal() {
     if (pClient_pedal->connect(pedal_device)) {
 */
   if (true) {
-    NimBLEAddress pedal_addr("D6:E3:BE:2A:01:0C");
+    NimBLEAddress pedal_addr("D6:E3:BE:2A:01:0C");   // MAC address of M Vave
     if (pClient_pedal->connect(pedal_addr, true)) {
 
 
